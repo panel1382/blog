@@ -10,37 +10,35 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/screen.css">
+
+        <!-- Webfonts -->
+        <link href='http://fonts.googleapis.com/css?family=Antic+Slab|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     </head>
     <body>
 
         <div class="container">
+          <div class="header">
+            <h2 class="title {{page.categories[0]}}"><a href="/">{{ site.name }}</a></h2>
+          </div>
+          {% include nav.html %}
           <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-
                 {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
+          </div>
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <a href="http://github.com/panel1382/"><i class="icon-github"></i></a>
+                <a href="http://twitter.com/paulvblue/"><i class="icon-twitter"></i></a>
+                <a href="http://www.linkedin.com/pub/paul-nelson/6/a23/7b0"><i class="icon-linkedin"></i></a>
+              </p>
             </div>
           </div>
         </div> <!-- /container -->
 
     </body>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"> </script>
+    <script src="/javascripts/ready.js"></script>
 </html>

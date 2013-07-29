@@ -1,0 +1,279 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p194@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_typography.scss */
+body {
+  color: #424242;
+  font-family: "Open Sans", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 8, ../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Antic Slab", Georgia, serif;
+  margin: .25em 0 0.75em;
+}
+
+/* line 13, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 2.2em;
+  color: #ff9900;
+}
+
+/* line 18, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 2.0em;
+}
+
+/* line 22, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 1.6em;
+  color: #ff9900;
+}
+/* line 26, ../sass/partials/_typography.scss */
+h3 a:link, h3 a:visited {
+  color: #ff9900;
+}
+/* line 29, ../sass/partials/_typography.scss */
+h3 a:hover, h3 a:hover {
+  color: #e68a00;
+}
+
+/* line 34, ../sass/partials/_typography.scss */
+h4 {
+  font-size: 1.6em;
+}
+
+/* line 38, ../sass/partials/_typography.scss */
+a {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  font-weight: 400;
+  text-shadow: 0 1px 0px #bcbcbc;
+  text-decoration: none;
+}
+/* line 43, ../sass/partials/_typography.scss */
+a:link {
+  color: #3299bb;
+}
+/* line 46, ../sass/partials/_typography.scss */
+a:visited {
+  color: #277893;
+}
+/* line 49, ../sass/partials/_typography.scss */
+a:hover {
+  color: #ff9900;
+}
+/* line 52, ../sass/partials/_typography.scss */
+a:active {
+  color: #e68a00;
+  text-shadow: 0 -1px 0 #a3a3a3;
+}
+
+/* line 58, ../sass/partials/_typography.scss */
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 1em;
+  text-shadow: 0 1px 0 #d6d6d6;
+}
+
+/* line 65, ../sass/partials/_typography.scss */
+strong {
+  font-weight: 600;
+}
+
+/* line 68, ../sass/partials/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 1, ../sass/partials/_structure.scss */
+body, html {
+  background: #bcbcbc;
+  width: 100%;
+}
+
+/* line 6, ../sass/partials/_structure.scss */
+.container {
+  width: 80%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* line 13, ../sass/partials/_structure.scss */
+.header {
+  padding: 1em;
+}
+/* line 16, ../sass/partials/_structure.scss */
+.header a:link, .header a:visited {
+  color: #277893;
+  text-shadow: 0 -1px 0 #a3a3a3;
+}
+/* line 20, ../sass/partials/_structure.scss */
+.header a:hover, .header a:active {
+  color: #e68a00;
+  text-shadow: 0 -1px 0 #a3a3a3;
+}
+/* line 25, ../sass/partials/_structure.scss */
+.header i {
+  margin-left: 0.5em;
+  color: #277893;
+}
+
+/* line 31, ../sass/partials/_structure.scss */
+h3 i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+/* line 36, ../sass/partials/_structure.scss */
+.footer {
+  margin: 0 auto 0.5em;
+  padding: 0 1em;
+}
+
+/* line 41, ../sass/partials/_structure.scss */
+.site {
+  background: #e9e9e9;
+  border: 1px solid #3299bb;
+  clear: both;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 0 auto 0.5em;
+}
+
+/* line 51, ../sass/partials/_structure.scss */
+blockquote, .highlight {
+  margin: 0 auto 1em;
+  padding: 1em;
+  width: 90%;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0 3px 1px #3299bb;
+  -moz-box-shadow: 0 0 3px 1px #3299bb;
+  box-shadow: 0 0 3px 1px #3299bb;
+}
+
+/* line 60, ../sass/partials/_structure.scss */
+.contact {
+  -webkit-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -o-transition: all 100ms;
+  transition: all 100ms;
+}
+/* line 62, ../sass/partials/_structure.scss */
+.contact i {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+/* line 67, ../sass/partials/_structure.scss */
+.contact a:link, .contact a:visited {
+  color: #3299bb;
+}
+/* line 70, ../sass/partials/_structure.scss */
+.contact a:hover, .contact a:active {
+  color: #ff9900;
+}
+
+/* line 75, ../sass/partials/_structure.scss */
+.meta {
+  font-size: .8em;
+}
+
+/* line 79, ../sass/partials/_structure.scss */
+nav ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 85, ../sass/partials/_structure.scss */
+nav ul li a:link, nav ul li a:visited {
+  text-shadow: 0 1px 0 #a3a3a3;
+}
+/* line 88, ../sass/partials/_structure.scss */
+nav ul li a:hover, nav ul li a:active {
+  color: #cc7a00;
+}
+/* line 91, ../sass/partials/_structure.scss */
+nav ul li a:active {
+  text-shadow: 0 -1px 0 #898989;
+}

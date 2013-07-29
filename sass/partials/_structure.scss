@@ -1,0 +1,94 @@
+body, html {
+	background: $rhino;
+	width: 100%;
+}
+
+.container {
+	width:80%;
+	max-width:1240px;
+	margin: 0 auto;
+	
+}
+
+.header {
+	padding: 1em;
+
+	a:link, a:visited {
+		color: darken($boobie, 10%);
+		text-shadow: 0 -1px 0 darken($rhino, 10%);
+	}
+	a:hover, a:active {
+		color: darken($goldfish, 5%);
+		text-shadow: 0 -1px 0 darken($rhino, 10%);
+	}
+
+	i {
+		margin-left: 0.5em;
+		color: darken($boobie, 10%);
+	}
+}
+
+h3 i {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.footer {
+	margin: 0 auto 0.5em;
+	padding: 0 1em;
+}
+
+.site{
+	background: $polarbear;
+	border: 1px solid $boobie;
+	clear: both;
+	@include border-radius(0.5em);
+
+	padding: 1em;
+	margin: 0 auto 0.5em;
+}
+
+blockquote, .highlight {
+	margin: 0 auto 1em;
+	padding: 1em;
+	width: 90%;
+
+	@include border-radius(0.5em);
+	@include box-shadow(0 0 3px 1px $boobie)
+}
+
+.contact {
+	@include single-transition(all, 100ms);
+	i {
+		font-size: 1.5em;
+		display: inline-block;
+		margin-right: 0.5em;
+	}
+	a:link, a:visited {
+		color:$boobie;
+	}
+	a:hover, a:active {
+		color: $goldfish;
+	}
+}
+
+.meta {
+	font-size: .8em;
+}
+
+nav ul li{
+	width: 20%;
+	float: left;
+	text-align: center;
+
+	margin-bottom: 1em;
+	a:link, a:visited {
+		text-shadow: 0 1px 0 darken($rhino, 10%);
+	}
+	a:hover, a:active {
+		color: darken($goldfish, 10%);
+	}
+	a:active {
+		text-shadow: 0 -1px 0 darken($rhino, 20%);
+	}
+}

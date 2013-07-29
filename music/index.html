@@ -1,0 +1,15 @@
+---
+layout: default
+title: Music / Random Thoughts
+---
+
+<div id="music">
+  <dl class="posts">
+    {% for post in site.posts %}
+    	{% if post.categories contains 'music' %}
+	      <dt><h3><a href="{{ post.url }}"><i class="{{post.categories[0]}}"></i>{{ post.title }}</a></h3></dt>
+	      <dd><p> {{ post.excerpt }} </p></dd>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

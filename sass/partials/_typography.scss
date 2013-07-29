@@ -1,0 +1,70 @@
+body {
+	color: $seal;
+	font-family: $bodyStack;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $headingStack;
+	margin: .25em 0 0.75em;
+}
+
+h1 {
+	font-size: 2.2em;
+	color: $goldfish;
+}
+
+h2 {
+	font-size: 2.0em;
+}
+
+h3 {
+	font-size: 1.6em;
+	color: $goldfish;
+
+	a:link, a:visited {
+		color: $goldfish;
+	}
+	a:hover, a:hover {
+		color: darken($goldfish, 5%);
+	}
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+a {
+	@include single-transition(all, 200ms);
+	font-weight: 400;
+	text-shadow: 0 1px 0px $rhino;
+	text-decoration: none;
+	&:link {
+		color: $boobie;
+	}
+	&:visited {
+		color: darken($boobie, 10%);
+	}
+	&:hover {
+		color: $goldfish;
+	}
+	&:active {
+		color: darken($goldfish, 5%);
+		text-shadow: 0 -1px 0 darken($rhino, 10%);
+	}
+}
+
+p {
+	font-size: 0.9em;
+	font-weight: 300;
+	margin-bottom: 1em;
+	text-shadow: 0 1px 0 lighten($rhino,10%);
+}
+
+strong {
+	font-weight: 600;
+}
+em {
+	font-style: italic;
+}
